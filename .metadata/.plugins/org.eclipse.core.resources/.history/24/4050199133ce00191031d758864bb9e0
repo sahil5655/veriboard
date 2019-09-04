@@ -1,0 +1,11 @@
+package com.verizon.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.verizon.entity.Users;
+
+public interface UserRepo extends MongoRepository<Users,Integer> {
+	
+	public Users findByName(String username);
+
+}

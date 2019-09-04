@@ -1,0 +1,14 @@
+package com.verizon.entity;
+
+import java.math.BigInteger;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "users")
+public class Users {
+	private BigInteger _id;
+	private String username;
+	private String password;
+	
+
+}
